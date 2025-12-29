@@ -1,3 +1,6 @@
+from django.db.models import F          # [추가] DB 레벨 연산을 위한 모듈
+from django.db import transaction       # [추가] 트랜잭션 관리를 위한 모듈
+
 # 재화 충전 (간이 버전) _ 144_181_codeline
 @login_required
 @transaction.atomic
